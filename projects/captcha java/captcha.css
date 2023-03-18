@@ -1,0 +1,53 @@
+.box {
+    box-shadow: 2px 3px 5px black;
+    width: 20em;
+    padding: 2em;
+    margin: 15em auto auto auto;
+    text-align: center;
+}
+
+.code {
+    border: 1px solid black;
+    text-align: center;
+    width: 10em;
+    padding: .5em .1em .5em .1em;
+    border-radius: .9em;
+    margin: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    border-radius: .5em;
+    padding: .5em;
+}
+
+.btn {
+    background: rgb(121, 222, 236);
+    padding: .4em;
+    border: 1px solid transparent;
+    border-radius: .4em;
+    transition: 350ms;
+}
+.btn:hover {
+    border: 1px solid black;
+    background: white;
+}
+
+.refresh {
+    display: contents;
+    font-size: 1.5em;
+    transition: 350ms;
+}
+
+.refresh:hover {
+    text-shadow: 1px 3px 5px black;
+}
+
+h3 {
+    font-size: 1.5em;
+    cursor: not-allowed;
+    user-select: none;
+}

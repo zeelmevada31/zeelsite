@@ -1,0 +1,41 @@
+body{
+    overflow: hidden;
+}
+.pkmn1{
+    position: absolute;
+    width: fit-content;
+    top: 20%;
+    left: 0;
+}
+#pkc{
+    border-bottom: 2px solid black;
+    height: 200px;
+    width: auto;
+}
+.pkmn2{
+    position: absolute;
+    width: fit-content;
+    top: 50%;
+    right: 0;
+}
+#chr{
+    border-bottom: 2px solid black;
+    height: 200px;
+    width: auto;
+}
+.health{
+    display: flex;
+    justify-content: center;
+}
+.atkbtn{
+    display: flex;
+}
+
+@keyframes hpanim {
+    0%{
+        transform: scale(150%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style type="text/css">
+        .table-cont{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:50%;
+            left: 50%;
+        }
+        table {
+            border-spacing: 0;
+            height: 10em;
+            width: 10em;
+            max-height: 10em;
+            max-width: 10em;
+            text-align: center;
+            user-select: none;
+            box-shadow: 2px 4px 2px black;
+            border: 2px solid black;
+            border-top: transparent;
+            border-radius: 10px;
+            background: cyan;
+        }
+
+        td {
+            height: auto;
+            width: 50px;
+            font-size: 15px;
+            font-family: cursive;
+        }
+
+        tr:first-child td {
+            background: white;
+            border-bottom: 2px solid black;
+        }
+
+        .box {
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 6px;
+            background: greenyellow;
+        }
+
+        .boxside {
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 6px;
+            background: orange;
+        }
+
+        .display-container {
+            position: relative;
+            height: 2.7em;
+            background: grey;
+            border: 1px solid black;
+            margin-bottom: -2.8px;
+        }
+
+        .display {
+            float: left;
+            height: 18px;
+            font-family: cursive;
+            font-size: 20px;
+            width: 7em;
+            background: transparent;
+            border: none;
+            text-align: left;
+        }
+
+        .display[disabled] {
+            color: black;
+        }
+
+        .display2 {
+            position: absolute;
+            height: 10px;
+            width: 7em;
+            left: 2px;
+            top: 24px;
+            background: transparent;
+            border: none;
+            transition: 150ms;
+        }
+
+        .d2d1 {
+            top: 0.4px;
+            left: 0.29px;
+            color: black;
+            font-size: 20px;
+            height: 18px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-cont">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <div class="display-container">
+                        <input type="text" disabled name="" id="display" class="display" value="0">
+                        <input type="text" value="0" id="blurdisplay" class="display2" disabled>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="box" id="c1">1</div>
+                </td>
+                <td>
+                    <div class="box" id="c2">2</div>
+                </td>
+                <td>
+                    <div class="box" id="c3">3</div>
+                </td>
+                <td>
+                    <div class="boxside" id="cplus">+</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="box" id="c4">4</div>
+                </td>
+                <td>
+                    <div class="box" id="c5">5</div>
+                </td>
+                <td>
+                    <div class="box" id="c6">6</div>
+                </td>
+                <td>
+                    <div class="boxside" id="csub">-</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="box" id="c7">7</div>
+                </td>
+                <td>
+                    <div class="box" id="c8">8</div>
+                </td>
+                <td>
+                    <div class="box" id="c9">9</div>
+                </td>
+                <td>
+                    <div class="boxside" id="cmult">*</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="boxside" id="clear">C</div>
+                </td>
+                <td>
+                    <div class="box" id="c0">0</div>
+                </td>
+                <td>
+                    <div class="boxside" id="c=">=</div>
+                </td>
+                <td>
+                    <div class="boxside" id="cdiv">/</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="boxside" id="brac1">(</div>
+                </td>
+                <td>
+                    <div class="boxside" id="brac2">)</div>
+                </td>
+                <td colspan="2">
+                    <div class="boxside" id="allclear" style="background: red;">AC</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>

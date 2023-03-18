@@ -1,0 +1,427 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 56px;
+  font-family: sans-serif;
+  background-image: url("img/opfinal3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .small-screen {
+    background-image: url('img/smsl3.jpg');
+    background-position: center;
+    background-repeat: default;
+  }
+
+  body {
+    background-image: url('img/smsl3.jpg');
+    background-position: center;
+    background-repeat: default;
+  }
+}
+
+
+/* update log */
+
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:focus {
+  outline: none;
+}
+
+#update-log .text-center{
+  font-weight: bolder;
+  font-size: 75%;
+}
+
+
+/* /update log */
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 3px solid black;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+
+.navbar-nav .nav-link {
+  transition: 300ms;
+  border-bottom: 1px solid transparent;
+  user-select: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(44, 11, 173, 0.978) !important;
+  display: block;
+  border-bottom: 1px solid blue;
+}
+
+.bg-light-blue {
+  background-color: #CCE5FF;
+}
+
+.navbar-toggler {
+  background: rgba(255, 166, 0, 0.074) !important;
+  outline: none;
+}
+
+.logo-image {
+  border-radius: 20px;
+}
+
+marquee a {
+  text-decoration: underline;
+}
+
+marquee {
+  background: rgba(0, 0, 0, 0.783);
+  color: white;
+  user-select: none;
+  font-size: 15px;
+}
+
+/* /header */
+
+/* home */
+
+
+.container-home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white !important;
+  text-shadow: 2px 2px 2px black;
+}
+
+span {
+  font-weight: bold;
+}
+
+#home p{
+  color: #333 !important;
+}
+
+.name {
+  color:yellow;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
+}
+
+.course {
+  color: rgb(40, 40, 176);
+}
+
+.container-home p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: white !important;
+}
+
+#ltst {
+  display: inline-block;
+  padding: .6rem;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent !important;
+  border-radius:30% 0 30% 0 !important;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+#ltst:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black !important;
+  color: black;
+}
+
+/* /Home */
+
+
+/* About */
+
+.edu {
+  user-select: none;
+  border-radius: 13px !important;
+  max-width: 90% !important;
+  background: linear-gradient(to bottom right, #355C7D, #6C5B7B, #C06C84);
+}
+
+.edu .card-body {
+  padding: 2rem;
+}
+
+.edu .card-title,
+.edu .card-text {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.edu hr {
+  border-top: 3px solid white;
+}
+
+@media only screen and (min-width : 789px){
+.edu .card-text{
+  font-size: 110% !important;
+}
+}
+@media only screen and (max-width :770px) {
+  .eduicon {
+    height: 40% !important;
+    width: 40% !important;
+  }
+}
+
+.skills {
+  max-width: 90%;
+  border-radius: 13px !important;
+  user-select: none;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/bgskills.jpg);
+  background-size: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills h5 {
+  font-size: 160%;
+  padding-bottom: 50px;
+}
+
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .col-sm-4 {
+    width: 50%;
+  }
+}
+
+/* /About */
+
+/* projects */
+
+
+
+#projects,
+#about {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  #projects .card {
+    transform: scale(0.8);
+  }
+}
+.gamescards .card{
+box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.projectbtn {
+  background-color: #fff;
+  border: 2px solid #ff7f50;
+  color: #ff7f50;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: block !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 auto !important;
+  text-transform: uppercase;
+}
+
+.projectbtn:hover {
+  background-color: #ff7f50;
+  color: #fff;
+  border:2px solid #fff;
+}
+
+.gamescards .card-title{
+  text-align: center;
+  color: black;
+}
+.gamescards p{
+  color: black;
+}
+
+
+.project-card {
+  max-width: 400px;
+  height: 350px;
+  border-radius: 20px !important;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  margin: 10px;
+}
+
+.project-card img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project-card .card-body {
+  padding: 20px;
+}
+
+.project-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-card .card-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.project-card .btn {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #1abc9c;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #16a085;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* /projects*/
+
+/* Footer */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  border-top: 3px solid black;
+}
+
+.feedbacklink {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  background-position: 100%;
+  animation: linkop 350ms ease-in-out infinite;
+}
+
+@keyframes linkop {
+  0%{
+    background-position: 0;
+  }
+  100%{
+    background-position: 100%;
+  }
+}
+
+
+.zeel {
+  background-color: black;
+  color: black;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.zeel:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+
+
+/* /Footer */

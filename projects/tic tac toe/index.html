@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: inline-block;
+            border: .06em solid black;
+            text-align: center;
+            width: 1.5em;
+            padding: .4em;
+            font-size: 40px;
+            font-family: cursive;
+            font-style: normal;
+            font-weight: bolder;
+            user-select: none;
+            cursor: pointer;
+            background: transparent;
+            color: brown;
+            -webkit-text-stroke: 2px black;
+        }
+        .box:nth-child(1){
+            border-top: 1px solid transparent;
+            border-left:1px solid transparent ;
+        }
+        .box:nth-child(2){
+            border-top: 1px solid transparent;
+        }
+        .box:nth-child(3){
+            border-top: 1px solid transparent;
+            border-right: 1px solid transparent;
+        }
+        .box:nth-child(5){
+            border-left: 1px solid transparent;
+        }
+        .box:nth-child(7){
+            border-right: 1px solid transparent;
+        }
+        .box:nth-child(9){
+            border-left: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+        }
+        .box:nth-child(10){
+            border-bottom: 1px solid transparent;
+        }
+        .box:nth-child(11){
+            border-bottom: 1px solid transparent;
+            border-right: 1px solid transparent;
+        }
+        .btn {
+            background: rgb(121, 222, 236);
+            padding: .4em;
+            border: 1px solid transparent;
+            border-radius: .4em;
+            transition: 350ms;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: white;
+            border: 1px solid black;
+        }
+        br{
+            user-select: none;
+        }
+        .container{
+            text-align: center;
+            width: 25em;
+            padding: 2em;
+            margin: auto;
+            margin-top: 5em;
+            box-shadow: 1px 3px 17px;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="t1">Player X turn</h1>
+    <div class="container">
+    <i class="box" id="a1">&nbsp;</i><i class="box" id="a2">&nbsp;</i><i class="box" id="a3">&nbsp;</i><br>
+    <i class="box" id="b1">&nbsp;</i><i class="box" id="b2">&nbsp;</i><i class="box" id="b3">&nbsp;</i><br>
+    <i class="box" id="c1">&nbsp;</i><i class="box" id="c2">&nbsp;</i><i class="box" id="c3">&nbsp;</i>
+    <br><br><br>
+    <button class="btn" onclick="reset()" id="btn">Reset</button>
+    </div>
+    <script src="tic tac toe.js"></script>
+</body>
+
+</html>

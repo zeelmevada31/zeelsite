@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="z.css">
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <div class="box">
+        <label for="">Enter task</label><br>
+        <input type="text" name="" id="in1" placeholder="Enter your task"><br><br>
+        <label for="">Description</label><br>
+        <textarea  name="" id="in2" placeholder="Enter task description"></textarea><br><br>
+        <button id="add" class="btn" onclick="op()">Add task</button>&nbsp;&nbsp;<button onclick="res()" class="btn">Reset List</button>
+    </div>
+    <div class="box1">
+        <table>
+            <thead>
+                <th>No</th>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Remove</th>
+            </thead>
+            <tbody id="tbd">
+                <tr>
+                    <td>1</td>
+                    <td>Please enter task</td>
+                    <td>Please enter description</td>
+                    <td><button class="btn">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="z.js"></script>
+</body>
+</html>
