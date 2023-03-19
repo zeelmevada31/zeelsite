@@ -1,15 +1,15 @@
 document.onkeydown = function (e) {
-    if (e.ctrlKey &&
-        (e.keyCode === 67 ||
-            e.keyCode === 86 ||
-            e.keyCode === 85 ||
-            e.keyCode === 117)) {
-        alert('not allowed');
-        return false;
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+      var alertBox = document.getElementById("alert-box");
+      alertBox.style.display = "block";
+      setTimeout(function() {
+        alertBox.style.display = "none";
+      }, 1000);
+      return false;
     } else {
-        return true;
+      return true;
     }
-}
+  }
 
 document.getElementById('closeupdate').addEventListener('click', () => {
     document.getElementById('update-log').style.display = "none"
