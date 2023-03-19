@@ -4,7 +4,7 @@ document.onkeydown = function (e) {
       alertBox.style.display = "block";
       setTimeout(function() {
         alertBox.style.display = "none";
-      }, 1000);
+      }, 0.50);
       return false;
     } else {
       return true;
