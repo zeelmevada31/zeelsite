@@ -70,8 +70,8 @@ homeNav.addEventListener('click', () => {
         body.style.backgroundSize = "cover"
         body.style.backgroundPosition = "center"
     }
-    else {
-        body.style.background = "url('img/opfinal.jpg') no-repeat"
+   else if(window.matchMedia("(min-width: 740px)").matches) {
+        body.style.background = "url('img/opfinal3.jpg') no-repeat"
         body.style.backgroundSize = "cover"
         body.style.backgroundPosition = "center"
     }
